@@ -1,0 +1,264 @@
+@import url('https://fonts.googleapis.com/css2?family=Acme&family=Arima:wght@300;400&family=Edu+TAS+Beginner:wght@600&family=Fugaz+One&family=Lato&family=Montserrat:wght@500&family=Nunito:wght@500&family=Poppins&family=Space+Grotesk:wght@600&display=swap');
+
+:root {
+    --primary-color: #015EEA;
+    --primary-font: 'Poppins';
+}
+
+.main {
+    font-family: 'Poppins';
+    max-width: 1440px;
+    margin: auto;
+}
+
+.row {
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-area {
+    background: url('../images/bg1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 80vh;
+    position: relative;
+}
+
+.header-area::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.4);
+    box-shadow: inset 60px 50px 100px #000000, inset -60px -50px 200px #000000;
+}
+
+/* Nav Styles */
+
+.navbar {
+    font-size: 18px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    padding: 0.5rem 6rem;
+    background-color: transparent;
+    z-index: 1000;
+    transition: all 0.6s;
+}
+
+.navbar .collapse .navbar-nav a {
+    color: white;
+}
+
+.navbar .collapse .navbar-nav a:hover {
+    color: rgb(231, 226, 226);
+}
+
+.navbar.sticky {
+    padding: 10px 100px;
+}
+
+.logo h4 {
+    color: var(--primary-color);
+    font-weight: 600;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.logo h4 span {
+    color: white;
+    text-align: right;
+    font-size: 16px;
+}
+
+.collapse {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navbar .collapse .navbar-nav a {
+    margin-right: 3rem;
+    position: relative;
+}
+
+.navbar.sticky .collapse .navbar-nav a {
+    color: black;
+}
+
+.logo.mr {
+    margin-right: 20rem;
+}
+
+/* Banner Styles */
+.banner {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    z-index: 100;
+    color: white;
+    padding: 0rem 6rem;
+    margin-top: 7rem;
+}
+
+.banner .entize {
+    text-transform: uppercase;
+    color: #c6c6d6;
+    font-weight: 400;
+    font-size: 1.5rem;
+    line-height: 1.25;
+}
+
+.banner .motto {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 18px;
+    font-feature-settings: 'salt';
+}
+
+.banner h1 {
+    position: relative;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 1.1;
+    margin: 0 0 2rem;
+}
+
+.banner h1::after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 15%;
+    height: 5px;
+    background-color: var(--primary-color);
+}
+
+.core-service {
+    margin-top: 48px;
+    padding: 0 6rem;
+}
+
+.core-service h3 {
+    margin-bottom: 48px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    font-feature-settings: 'salt' on;
+    color: #363736;
+}
+
+/* Overwrite toggler */
+.navbar-toggler {
+    background-color: white !important;
+    border: 1px solid var(--primary-color) !important;
+    outline: none !important;
+}
+
+/* Utils */
+
+.outline-btn {
+    margin-top: 10px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 8px;
+    padding: 10px 30px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    font-feature-settings: 'salt' on;
+    color: #FFFFFF;
+    transition: all 0.4s ease-in;
+}
+
+.outline-btn:hover {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+}
+
+
+@media (max-width: 991px) {
+    .banner {
+        padding: 8rem 4rem;
+    }
+
+    .banner h1 {
+        font-weight: 600;
+        font-size: 28px;
+    }
+}
+
+@media (max-width: 770px) {
+
+    .main {
+        max-width: 100vw;
+        margin: auto;
+    }
+
+    .header-area {
+        height: 80vh;
+    }
+
+    .navbar {
+        padding: 0rem 1rem;
+    }
+
+    .navbar.sticky {
+        padding: 10px;
+    }
+
+    .collapse {
+        display: block;
+    }
+
+    .collapse .contact-button {
+        margin-top: 1rem;
+    }
+
+    .logo.mr {
+        margin-right: 0rem;
+    }
+
+    .logo h4 span {
+        color: white;
+        text-align: right;
+    }
+
+    .banner h1 {
+        font-weight: 600;
+        font-size: 20px;
+    }
+
+    .banner {
+        color: white;
+        padding-left: 2rem;
+        margin-top: -6rem;
+    }
+
+    .banner h1::after {
+        bottom: -15px;
+        width: 25%;
+        height: 4px;
+    }
+
+    .banner .entize {
+        font-size: 15px;
+    }
+
+
+    .outline-btn {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
