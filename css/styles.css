@@ -110,6 +110,7 @@
     color: #c6c6d6;
     font-weight: 400;
     font-size: 1.5rem;
+    margin-bottom: 2rem;
     line-height: 1.25;
 }
 
@@ -119,6 +120,7 @@
     font-size: 14px;
     line-height: 20px;
     font-feature-settings: 'salt';
+    margin-bottom: 2rem;
 }
 
 .banner h1 {
@@ -126,7 +128,7 @@
     font-weight: 700;
     font-size: 48px;
     line-height: 1.1;
-    margin: 0 0 2rem;
+    margin-bottom: 3rem;
 }
 
 .banner h1::after {
@@ -141,12 +143,12 @@
 
 /* Core Service styles */
 .core-service {
-    margin-top: 48px;
+    margin-top: 4rem;
     padding: 0 6rem;
 }
 
 .core-service h3 {
-    margin-bottom: 48px;
+    margin-bottom: 3rem;
     font-style: normal;
     font-weight: 700;
     font-size: 32px;
@@ -187,7 +189,7 @@
 
 /* About us style */
 .about-us {
-    margin-top: 32px;
+    margin-top: 4rem;
     text-align: center;
     padding: 3rem;
     background: #f1f1f5;
@@ -217,7 +219,7 @@
 
 /* Services styles */
 .services {
-    margin-top: 48px;
+    margin-top: 4rem;
     padding: 0 6rem;
 }
 
@@ -270,6 +272,19 @@
     line-height: 30px;
     font-feature-settings: 'salt' on;
     color: #6A7D88;
+}
+
+.footer {
+    margin-top: 4rem;
+    padding: 0 6rem;
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.last-footer {
+    background-color: #133870;
+    padding: 0 6rem;
+    color: white;
 }
 
 /* Overwrite toggler */
@@ -385,7 +400,7 @@
 
     .core-service h3 {
         margin-bottom: 24px;
-        font-size: 24px;
+        font-size: 25px;
     }
 
     .each-core-service {
@@ -416,8 +431,13 @@
     }
 
     .services {
-        margin-top: 48px;
+        margin-top: 4rem;
         padding: 0 1rem;
+    }
+
+    .services h2 {
+        font-size: 25px;
+        margin-bottom: 24px;
     }
 }
 
