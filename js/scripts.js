@@ -12,3 +12,6 @@ navLinks.forEach(link => {
         link.classList.add('active')
     }
 })
+
+// Slides
+// let counter
