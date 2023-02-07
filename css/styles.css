@@ -45,7 +45,7 @@
     top: 0;
     left: 0;
     padding: 0.5rem 6rem;
-    background-color: transparent;
+    /* background-color: transparent; */
     z-index: 1000;
     transition: all 0.6s;
 }
@@ -60,6 +60,8 @@
 
 .navbar.sticky {
     padding: 10px 100px;
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
 .logo h4 {
@@ -87,7 +89,7 @@
 }
 
 .navbar.sticky .collapse .navbar-nav a {
-    color: black;
+    color: white;
 }
 
 .logo.mr {
@@ -400,15 +402,92 @@
 
 .footer {
     margin-top: 4rem;
-    padding: 0 6rem;
+    padding: 2rem 6rem;
     background-color: var(--primary-color);
     color: white;
 }
 
+.footer.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.footer-logo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.footer-logo h4 {
+    font-weight: 600;
+}
+
+.footer-logo span {
+    margin-top: -10px;
+    color: white;
+    text-align: left;
+    font-size: 16px;
+    margin-left: 25px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contacts .contact {
+    display: flex;
+    flex-direction: column;
+}
+
+.contacts .contact h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    font-feature-settings: 'salt' on;
+    margin-bottom: -10px;
+}
+
+.company-desc p {
+    font-size: 16px;
+    line-height: 30px;
+}
+
+.quick-links {
+    padding-left: 8rem;
+}
+
+.quick-links h3 {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 48px;
+    font-feature-settings: 'salt' on;
+    padding-left: 8rem;
+}
+
+.quick-links .links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding-left: 8rem;
+}
+
+.quick-links .links li {
+    cursor: pointer;
+}
+
 .last-footer {
     background-color: #133870;
-    padding: 0 6rem;
+    padding: 0.4rem 6rem;
     color: white;
+}
+
+.last-footer p {
+    text-align: center;
 }
 
 /* Overwrite toggler */
@@ -573,6 +652,51 @@
     .services h2 {
         font-size: 25px;
         margin-bottom: 24px;
+    }
+
+    .footer {
+        margin-top: 2rem;
+        padding: 2rem 1rem;
+    }
+
+    .contacts {
+        gap: 10px;
+    }
+
+    .contacts .contact h3 {
+        margin-bottom: -5px;
+    }
+
+    .company-desc p {
+        font-size: 16px;
+        line-height: 30px;
+    }
+
+    .quick-links {
+        margin: 4rem 0px;
+    }
+
+    .quick-links h3 {
+        padding-left: 0rem;
+    }
+
+    .quick-links .links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+        padding-left: 0rem;
+    }
+
+    .quick-links .links li {
+        cursor: pointer;
+    }
+
+    .last-footer {
+        width: 100vw;
+        background-color: #133870;
+        padding: 0.4rem 0rem;
+        color: white;
     }
 }
 
