@@ -189,7 +189,7 @@
 
 /* About us style */
 .about-us {
-    width: 100%;
+    /* width: 100%; */
     margin-top: 4rem;
     padding: 3rem;
     background: #f1f1f5;
@@ -197,23 +197,16 @@
     position: relative;
 }
 
-.about-us .slides {
-    display: flex;
-    text-align: center;
-    width: 500%;
-}
-
-.about-us .slides .slide {
+.about-us {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     transition: 2s;
-    width: 20%;
+    /* width: 20%; */
 }
 
-.about-us .slides .slide h2 {
-    width: 500%;
+.about-us h2 {
     margin-bottom: 32px;
     font-style: normal;
     font-weight: 700;
@@ -224,14 +217,14 @@
     color: #000000;
 }
 
-.about-us .slides .slide p {
+.about-us p {
     width: 70%;
     font-size: 16px;
     line-height: 30px;
     color: rgba(0, 0, 0, 0.5);
 }
 
-.slides input {
+/* .slides input {
     display: none;
 }
 
@@ -243,6 +236,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    left: 25%;
 }
 
 .manual-btn {
@@ -298,9 +292,10 @@
     display: flex;
     bottom: 8px;
     width: 800px;
-    /* margin-top: -40px; */
+    margin-top: -40px;
     justify-content: center;
     align-items: center;
+    left: 25%;
 }
 
 .navigation-auto div {
@@ -344,7 +339,7 @@
 
 #radio8:checked~.navigation-auto .auto-btn8 {
     background-color: var(--primary-color);
-}
+} */
 
 /* Services styles */
 .services {

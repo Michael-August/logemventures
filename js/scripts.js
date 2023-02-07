@@ -14,4 +14,12 @@ navLinks.forEach(link => {
 })
 
 // Slides
-// let counter
+let counter = 2
+setInterval(() => {
+    document.getElementById('radio' + counter).checked = true
+    counter ++
+    if(counter > 8) {
+        counter = 1
+    }
+
+}, 5000)
